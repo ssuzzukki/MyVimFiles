@@ -5,18 +5,6 @@ set number
 inoremap fj <Esc>
 " エスケープキーをfjに割り当て：定期的にホームポジションに戻って来るように
 
-nnoremap <C-l> $
-" 行末移動を<C-l>に割り当て
-
-nnoremap <C-h> 0
-" 行末移動を<C-h>に割り当て
-
-nnoremap <C-k> H 
-" 画面内最上移動を<C-k>に割り当て
-
-nnoremap <C-j> L 
-" 画面内最下移動を<C-j>に割り当て
-
 nnoremap <C-s> :w<CR>
 " 保存を<C-s><CR>に割り当て
 
@@ -29,3 +17,8 @@ nnoremap J 10j
 nnoremap K 10k
 " Shiftで10文字一括移動
 
+nnoremap <C-l> $
+nnoremap <C-h> 0
+nnoremap <C-k> H 
+nnoremap <C-j> L
+" Ctrlで画面端に移動
