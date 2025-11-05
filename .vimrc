@@ -6,7 +6,8 @@ inoremap fj <Esc>
 " エスケープキーをfjに割り当て：定期的にホームポジションに戻って来るように
 
 nnoremap <C-s> :w<CR>
-" 保存を<C-s><CR>に割り当て
+inoremap <C-s> <Esc>:w<CR>a
+" 保存を<C-s>に割り当て
 
 nnoremap <C-q> :wq
 " 保存して終了を<C-q>に割り当て
@@ -22,3 +23,6 @@ nnoremap <C-h> 0
 nnoremap <C-k> H 
 nnoremap <C-j> L
 " Ctrlで画面端に移動
+
+set showmatch
+" 対応する括弧をハイライト
