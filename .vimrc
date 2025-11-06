@@ -26,3 +26,10 @@ nnoremap <C-j> L
 
 set showmatch
 " 対応する括弧をハイライト
+
+set smartindent
+" インデントを自動化
+
+nnoremap <C-i>stdio i#include <stdio.h><Esc>
+nnoremap <C-i>stdlib i#include <stdlib.h><Esc>
+" 仮のマッピング：ユーザ定義の入力補完で書きたい
