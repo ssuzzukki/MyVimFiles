@@ -1,4 +1,3 @@
-" 書き終わったら/mnt/c/Users/yuga3/MyVimFiles/ にcpしてWindows側からgitで管理
 set number
 " 行番号表示
 
@@ -30,6 +29,13 @@ set showmatch
 set smartindent
 " インデントを自動化
 
-nnoremap <C-i>stdio i#include <stdio.h><Esc>
-nnoremap <C-i>stdlib i#include <stdlib.h><Esc>
-" 仮のマッピング：ユーザ定義の入力補完で書きたい
+abbr _stdio include <stdio.h>
+abbr _stdlib #include <stdlib.h>
+abbr _for for(int i=0;i<n;i++){
+abbr _main int main(void){
+" 短縮入力
+
+:command Hello echo "Hello, world!"
+:command TestLs !ls
+abbr _h "Hello, world!"
+" コマンドのテスト
