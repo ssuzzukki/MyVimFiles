@@ -29,13 +29,11 @@ set showmatch
 set smartindent
 " インデントを自動化
 
-abbr _stdio include <stdio.h>
+abbr _stdio #include <stdio.h>
 abbr _stdlib #include <stdlib.h>
 abbr _for for(int i=0;i<n;i++){
 abbr _main int main(void){
 " 短縮入力
 
-:command Hello echo "Hello, world!"
-:command TestLs !ls
-abbr _h "Hello, world!"
-" コマンドのテスト
+:command TDGND !firefox https://t.co/0lC21BEzKQ
+" comic fuzでまちカドまぞくを読めるexコマンド
