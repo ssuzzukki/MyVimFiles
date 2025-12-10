@@ -29,11 +29,10 @@ set showmatch
 set smartindent
 " インデントを自動化
 
-abbr _stdio #include <stdio.h>
-abbr _stdlib #include <stdlib.h>
-abbr _for for(int i=0;i<n;i++){
-abbr _main int main(void){
+abbr _inc #include <.h>
 " 短縮入力
+
 
 :command TDGND !firefox https://t.co/0lC21BEzKQ
 " comic fuzでまちカドまぞくを読めるexコマンド
+
