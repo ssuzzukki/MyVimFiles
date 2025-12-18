@@ -11,11 +11,17 @@ inoremap <C-s> <Esc>:w<CR>a
 nnoremap <C-q> :wq
 " 保存して終了を<C-q>に割り当て
 
-nnoremap H 10h
-nnoremap L 10l
+"nnoremap H 10h
+"nnoremap L 10l
+"nnoremap J 10j
+"nnoremap K 10k
+" Shiftで10文字一括移動
+
+nnoremap H 10b 
+nnoremap L 10w
 nnoremap J 10j
 nnoremap K 10k
-" Shiftで10文字一括移動
+" Shiftで10行・10単語一括移動
 
 nnoremap <C-l> $
 nnoremap <C-h> 0
@@ -29,6 +35,17 @@ set showmatch
 set smartindent
 " インデントを自動化
 
-inoremap ( ()<Esc>ha
-inoremap { {}<Esc>ha
+inoremap ( ()<LEFT>
+inoremap { {}<LEFT>
 " 括弧をまとめて入力
+
+set ruler
+set cursorline
+set relativenumber
+
+syntax on
+
+nnoremap <Esc><Esc> [cmd]nohisearch<CR><Esc>
+
+nnoremap U <C-r>
+" redoをUに割り当て
