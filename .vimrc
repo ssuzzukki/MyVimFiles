@@ -41,6 +41,8 @@ inoremap { {}<LEFT>
 
 set ruler
 set cursorline
+"カーソル行のハイライト
+
 set relativenumber
 
 syntax on
