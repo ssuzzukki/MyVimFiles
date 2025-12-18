@@ -29,10 +29,6 @@ set showmatch
 set smartindent
 " インデントを自動化
 
-abbr _inc #include <.h>
-" 短縮入力
-
-
-:command TDGND !firefox https://t.co/0lC21BEzKQ
-" comic fuzでまちカドまぞくを読めるexコマンド
-
+inoremap ( ()<Esc>ha
+inoremap { {}<Esc>ha
+" 括弧をまとめて入力
