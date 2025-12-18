@@ -46,6 +46,7 @@ set cursorline
 set relativenumber
 
 syntax on
+" シンタックスハイライト
 
 nnoremap <Esc><Esc> [cmd]nohisearch<CR><Esc>
 
