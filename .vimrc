@@ -44,6 +44,7 @@ set cursorline
 "カーソル行のハイライト
 
 set relativenumber
+" 相対行番号表示
 
 syntax on
 " シンタックスハイライト
